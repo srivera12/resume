@@ -1,12 +1,15 @@
 /* TO ADD
 bottom border under titles
-responsive stylings - small phone, large phones, and all ipads
+responsive stylings - small phone and all ipads
 hover effects?
 title in header
 meta tags for author, keywords, descriptions
+add signature to pictures (current and others before adding)
+certificates are too big
+feels kinda bland
 */
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
+/* @media (min-width: 768px) for working in safari */
 @media (min-device-width: 428px) {
   /* For Desktops */
   #sidebar {
