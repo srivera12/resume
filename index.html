@@ -1,83 +1,131 @@
-<!-- should I just redo this whole thing in Bootstrap? -->
-<html>
+<html lang="en">
   <head>
-    <!-- should the certs be the front page? separate page for projects? -->
-    <title>Sarah's Coding Certifications</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <meta name="author" content="Sarah Rivera" />
+    <meta
+      name="keywords"
+      content="developer software javascript html css development"
+    />
+    <meta
+      name="description"
+      content="This is the portfolio website of Sarah Rivera, an apprentice web developer. Here you can see her completed web development coursework, bootcamps, certifications, and projects."
+    />
+    <title>Sarah Rivera | Portfolio</title>
+    <link rel="stylesheet" href="original-styles.css" />
+    <link rel="stylesheet" href="new-styles.css" />
+    <!-- add some JS -->
     <script type="text/javascript" src="scripts.js"></script>
+    <title>Sarah Rivera's Portfolio</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <ul>
-        <li><a href="#stackskills">StackSkills</a></li>
-        <li><a href="#udemy">Udemy</a></li>
-        <li><a href="todo.html">To-Do List</a></li>
-      </ul>
+      <!-- LOGO -->
+      <h2 id="page-header">
+        <img src="images/me.jpg" alt="profile pic" />
+        Sarah Rivera | Portfolio
+      </h2>
+      <!-- MAIN NAVIGATION -->
+      <nav id="main-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="certs.html">Certifications</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <div id="sidebar">
-        <h2>Hey, It's Me!</h2>
-        <img src="images/me.jpg" />
-        <h4>Sarah Rivera</h4>
-        <h4>Hello! Welcome to my site.</h4>
-        <p>
-          Here you can see my certifications and certificates from the trainings
-          I've completed on my coding journey so far.
-        </p>
-        <p>I can be contacted at **********.</p>
+    <!-- MAIN -->
+    <div class="page-main">
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Sarah Rivera</h1>
+          <p>Software Engineer v0.0.1</p>
+        </div>
       </div>
-      <section>
-        <h1 id="stackskills">StackSkills</h1>
-        <a
-          href="https://stackskills.com/courses/enrolled/1121553"
-          target="_blank"
-        >
-          <img
-            class="img"
-            src="images/Beginner HTML, CSS, JS Certificate.png"
-          />
-        </a>
-        <a
-          href="https://stackskills.com/courses/enrolled/1121553"
-          target="_blank"
-          ><h3 id="ss-c1">
-            HTML, CSS, and JavaScript - Certification Course for Beginners
-          </h3>
-        </a>
+      <!-- SKILLS -->
+      <div id="skills" class="site-section">
+        <div class="section-header">
+          <h2>Key skills</h2>
+        </div>
+        <div class="site-section-inside">
+          <div class="skill-box">
+            <img src="images/html.png" />
+            <h5>HTML 5</h5>
+            <p>This is the description of the service provided.</p>
+          </div>
+          <div class="skill-box">
+            <img src="images/css.png" />
+            <h5>CSS 3</h5>
+            <p>This is the description of the service provided.</p>
+          </div>
+          <div class="skill-box">
+            <img src="images/js.png" />
+            <h5>JavaScript (ECMAScript 6)</h5>
+            <p>This is the description of the service provided.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT -->
+      <div id="about" class="section-header">
+        <h2>About Me</h2>
         <p>
-          In this course, I took my first formal foray into the world of web
-          development. From the baby steps of basic HTML document structure, to
-          CSS stylings and cool hover effects, to the (at the time) complexities
-          of JavaScript conditionals and loops.
+          <!-- update about me -->
+          Dammit, Doc, why did you have to tear up that letter? If only I had
+          more time. Wait a minute, I got all the time I want I got a time
+          machine, I'll just go back and warn him. 10 minutes oughta do it.
+          Time-circuits on, flux-capacitor fluxing, engine running, alright. No,
+          no no no no, c'mon c'mon. C'mon c'mon, here we go, this time. Please,
+          please, c'mon. Uh, no, no, no, no. What are you looking at, butt-head?
+          Sit here, Marty. Wait a minute. Wait a minute, Doc. Are you telling me
+          that it's 8:25? Oh Mom, there's nothing wrong with calling a boy.
         </p>
-        <!-- add The Complete Front-End Web Development Course! -->
-        <a
-          href="https://stackskills.com/courses/enrolled/161968"
-          target="_blank"
-        >
-          <img
-            class="img"
-            src="images/Complete Frontend Development Course.png"
-          />
-        </a>
-        <a
-          href="https://stackskills.com/courses/enrolled/161968"
-          target="_blank"
-          ><h3 id="ss-c1">The Complete Front-End Web Development Course!</h3>
-        </a>
-        <p>
-          This course included more recent functionalities of HTML5, CSS3, and
-          JS6, but also added jQuery and Bootstrap. My personal favorite part of
-          this course was the Pipboy from Bethesda's Fallout games, a project
-          created with Bootstrap, jQuery, and vanilla Javascript.
-        </p>
-      </section>
-      <section>
-        <h1 id="udemy">Udemy</h1>
-      </section>
-    </main>
-    <footer></footer>
+      </div>
+      <!-- TESTIMONIALS -->
+      <!-- <section id="testimonials" class="site-section">
+        <div class="site-section-inside">
+          <div class="section-header">
+            <h2>Testimonials</h2>
+          </div>
+          <div class="testimonial-box">
+            <div class="testimonial-content">
+              This is where you would put the quoted text of the testimonial.
+            </div>
+            <div class="testimonial-author">
+              <img src="images/face.png" />
+              <h5>Name</h5>
+              <span>Title</span>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="testimonial-content">
+              This is where you would put the quoted text of the testimonial.
+            </div>
+            <div class="testimonial-author">
+              <img src="images/face.png" />
+              <h5>Name</h5>
+              <span>Title</span>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="testimonial-content">
+              This is where you would put the quoted text of the testimonial.
+            </div>
+            <div class="testimonial-author">
+              <img src="images/face.png" />
+              <h5>Name</h5>
+              <span>Title</span>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <img src="images/me.jpg" alt="profile pic" />
+      <span>My Portfolio<br />&copy;2021</span>
+    </footer>
   </body>
 </html>

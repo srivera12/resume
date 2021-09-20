@@ -8,21 +8,21 @@ add signature to pictures (current and others before adding)
 certificates are too big
 feels kinda bland
 */
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"); */
 /* @media (min-width: 768px) for working in safari */
-@media (min-device-width: 428px) {
+/* @media (min-device-width: 428px) { */
   /* For Desktops */
-  #sidebar {
+  /* #sidebar {
     display: unset !important;
   }
   li a {
     font-size: 20px !important;
   }
-}
+} */
 
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) { */
   /* For Very Large Desktops */
-  #sidebar {
+  /* #sidebar {
     width: 500px !important;
   }
   li a {
@@ -46,11 +46,11 @@ feels kinda bland
   h4 {
     font-size: 25px;
   }
-}
+} */
 
 /* For phones */
 
-body {
+/* body {
   font-family: "Courier New", Courier, monospace;
 }
 .img {
@@ -131,4 +131,4 @@ h1 {
   text-align: center;
   margin: auto;
   display: block;
-}
+} */
