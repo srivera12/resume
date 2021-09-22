@@ -4,24 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <meta http-equiv="U-XA-Compatible" content="ie-edge" />
-    <link rel="stylesheet" href="montessori-quote-machine.css">
+    <link rel="stylesheet" href="montessori-quote-machine.css" />
     <title>Montessori Quote Machine</title>
   </head>
   <body>
     <main class="app">
       <p>
-        <img
-          src="images/quote.jpg"
-        />
+        <img src="images/quote.jpg" />
       </p>
       <section class="quotes">
         <h1>Maria Montessori says:</h1>
         <blockquote class="quote-text"></blockquote>
         <p class="quote-source"></p>
-        <p class="quote-topic"></p>
       </section>
       <section>
-        <button type="button" class="new-quote-button">New Quote!</button>
+        <button type="button" id="new-quote-button">New Quote!</button>
+      </section>
+      <section>
+        <h3>Search by source:</h3>
+        <!-- <form>
+          <select id="source-select"></select>
+          <button id="quote-source-button">Show Me!</button>
+        </form> -->
+        <div id="quotes-by-source">Coming soon!</div>
+      </section>
+      <section>
+        <h3>Search by topic:</h3>
+        <!-- <form>
+          <select id="topic-select"></select>
+          <button id="quote-topic-button">Show Me!</button>
+        </form> -->
+        <div id="quotes-by-source">Coming Soon!</div>
       </section>
     </main>
     <script src="montessori-quote-machine.js"></script>

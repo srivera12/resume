@@ -43,3 +43,7 @@ blockquote:after {
 .quote-source {
   font-style: italic;
 }
+
+section {
+  margin-bottom: 10%;
+}
