@@ -3,6 +3,7 @@ const todoList = document.querySelector("ul");
 const inputForm = document.querySelector("form");
 const taskInput = document.getElementById("todo-input");
 const clearBtn = document.getElementById("clear");
+const addBtn = document.getElementById("add");
 
 // connecting to local storage
 const storKey = "todos";
@@ -25,7 +26,6 @@ function todoMaker(input) {
   task.classList.add("list-group-item");
   todoList.appendChild(task);
   task.addEventListener("click", function () {
-    console.log("clicked");
     if (task.classList.contains("done")) {
       makeUndone(task);
     } else {

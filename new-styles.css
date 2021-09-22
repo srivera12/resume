@@ -284,6 +284,7 @@ footer img {
 .project-box {
   display: inline-block;
   width: 25%;
+  height: 675px;
   border: 4px solid black;
   background-color: #999;
   padding: 20px;
@@ -308,6 +309,7 @@ footer img {
 .project-box img {
   margin: 10px 25px;
   width: 80%;
+  height: 220px;
   justify-content: center;
   border: 2px solid #fff;
 }
@@ -320,6 +322,7 @@ footer img {
 
 /* MOBILE RESPONSIVE */
 
+/* try 480px as mobile breakpoint */
 @media screen and (max-width: 768px) {
   /* header */
 
@@ -385,4 +388,4 @@ footer img {
 }
 
 /* projects */
-
+/* change project box width % */

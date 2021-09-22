@@ -18,3 +18,7 @@ ul, h1, h2, form {
     background-color: slategray;
     text-decoration: line-through;
 }
+
+li:hover {
+    border: 3px solid white !important;
+}
