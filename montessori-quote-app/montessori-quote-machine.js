@@ -253,33 +253,36 @@ function displayQuoteSource(source) {
 newQuote();
 
 // // creating quote select by source
-// function createSourceSelect() {
-//   // if (montessoriQuote[].book) {
-//   //    return false;
-//   // } else {
-
-//   // }
-//   for (let i = 0; i < montessoriQuotes.length; i++) {
-//     let sourceOption = document.createElement("option");
-//     sourceOption.textContent = montessoriQuotes[i].book;
-//     sourceOption.setAttribute('value', montessoriQuotes[i].book)
-//     sourceSelect.appendChild(sourceOption);
-//   }
-// }
-// createSourceSelect();
+function createSourceSelect() {
+  const bookList = [];
+  for (let i = 0; i < montessoriQuotes.length; i++) {
+    if (!bookList.includes(montessoriQuotes[i].book)) {
+      bookList.push(montessoriQuotes[i].book);
+    }
+  }
+  for (let i = 0; i < bookList.length; i++) {
+    let sourceOption = document.createElement('option');
+    sourceOption.textContent = bookList[i];
+    sourceOption.setAttribute('value', bookList[i]);
+    sourceSelect.appendChild(sourceOption);
+  }
+}
+createSourceSelect();
 
 // // select by quote source
-// function getQuotesSource(value) {
-//   for (let i = 0; i < montessoriQuotes.length; i++) {
-//     if (montessoriQuotes[i].book === value) {
-//       let quote = document.createElement("blockquote");
-//       quote.classList.add("quote-text");
-//       quotesBySource.appendChild(quote);
-//     }
-//   }
-// }
-// sourceButton.addEventListener("submit", getQuotesSource(value))
-
+function getQuotesSource() {
+  quotesBySource.textContent = "";
+  const value = sourceSelect.value;
+  for (let i = 0; i < montessoriQuotes.length; i++) {
+    if (montessoriQuotes[i].book === value) {
+      let quote = document.createElement('blockquote');
+      quote.textContent = montessoriQuotes[i].quote;
+      quote.classList.add('quote-text');
+      quotesBySource.appendChild(quote);
+    }
+  }
+}
+sourceButton.addEventListener('click', getQuotesSource);
 
 // // search quote by topic
 // function createTopicSelect() {
