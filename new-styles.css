@@ -243,7 +243,8 @@ footer img {
 }
 
 #cert-main {
-  background-color: rgba(73, 175, 253, 0.6);
+  background-color: #ddd;
+  /* background-color: rgba(73, 175, 253, 0.6); */
   /* background-image: url(images/d20Roller.png); */
   /* background-size: cover; */
 }
