@@ -1,15 +1,15 @@
 /* default styles given to the body */
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
   margin: 0;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
   line-height: 1.5;
 }
 
 h2 {
-  font-family: "Press Start 2P";
+  font-family: 'Press Start 2P';
 }
 
 /* HEADER STYLES */
@@ -36,7 +36,7 @@ header img {
 
 header h2 {
   font-size: 16px;
-  font-family: "Press Start 2P";
+  font-family: 'Press Start 2P';
 }
 
 /* main navigation */
@@ -105,7 +105,7 @@ footer img {
 .hero-title {
   margin: 0;
   font-size: 100px;
-  font-family: "Press Start 2P";
+  font-family: 'Press Start 2P';
 }
 
 .hero-content p {
@@ -148,7 +148,7 @@ footer img {
   text-transform: uppercase;
   font-weight: 300;
   color: #777;
-  font-family: "Press Start 2P";
+  font-family: 'Press Start 2P';
 }
 
 .site-section-secondary {
@@ -223,10 +223,9 @@ footer img {
 /* CERT STYLES */
 
 #course-type-nav {
-  background-color: #444;
+  background-color: #fff;
   width: 100%;
-  height: 60px;
-  padding: auto;
+  height: 45px;
 }
 
 #course-type-nav ul {
@@ -235,18 +234,17 @@ footer img {
 
 #course-type-nav ul li {
   display: inline-block;
+  margin: auto 10px;
 }
 
 #course-type-nav ul li a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
 #cert-main {
   background-color: #ddd;
-  /* background-color: rgba(73, 175, 253, 0.6); */
-  /* background-image: url(images/d20Roller.png); */
-  /* background-size: cover; */
+
 }
 
 .cert {
@@ -273,13 +271,12 @@ footer img {
 
 /* course descriptions */
 
-
 /* PROJECTS STYLES */
 
 /* project box */
-.projects ul {
-  list-style: none;
-  padding: 0;
+.projects {
+  padding: 80px 0;
+  display: flex;
 }
 
 .project-box {
@@ -289,29 +286,28 @@ footer img {
   border: 4px solid black;
   background-color: #999;
   padding: 20px;
-  margin: 0 25px;
+  margin: 20px;
 }
 
 .project-box:hover {
   border-color: #49aefd;
-  background-color: #ccc
+  background-color: #ccc;
 }
 
 .project-box a {
   text-decoration: none;
 }
 
-.project-box a h4{
+.project-box a h4 {
   color: #000;
-  font-family: "Press Start 2P";
+  font-family: 'Press Start 2P';
   font-size: 20px;
 }
 
 .project-box img {
-  margin: 10px 25px;
+  margin: 10px 30px;
   width: 80%;
-  height: 220px;
-  justify-content: center;
+  height: 350px;
   border: 2px solid #fff;
 }
 
@@ -319,11 +315,8 @@ footer img {
   color: #222;
 }
 
-
-
 /* MOBILE RESPONSIVE */
 
-/* try 480px as mobile breakpoint */
 @media screen and (max-width: 768px) {
   /* header */
 
@@ -337,7 +330,11 @@ footer img {
   header #main-navigation {
     width: 100%;
     display: block;
-    text-align: center;
+    text-align: left;
+  }
+
+  header #main-navigation ul li a {
+    padding: 0 1px;
   }
 
   /* hero */
@@ -369,7 +366,7 @@ footer img {
 
   /* feature boxes */
 
-  .service-box {
+  .skill-box {
     width: 100%;
     display: block;
   }
@@ -380,13 +377,50 @@ footer img {
     width: 100%;
     display: block;
   }
+
+  /* certs */
+
+  #course-type-nav {
+    height: 45px;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  #course-type-nav ul li {
+    margin: 20px;
+  }
+
+  .cert {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  .cert img {
+    max-width: 90%;
+  }
+
+  /* projects */
+
+  .projects {
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+  }
+
+  .project-box {
+    display: inline-block;
+    margin: 15px;
+    width: 300px;
+    height: fit-content;
+    padding: 20px;
+  }
+
+  .project-box img {
+    margin: 10px;
+    width: 80%;
+    height: 350px;
+    border: 2px solid #fff;
+  }
 }
-
-/* certs */
-
-.cert img {
-  max-width: 90%;
-}
-
-/* projects */
-/* change project box width % */
