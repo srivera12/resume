@@ -1,8 +1,0 @@
-**/.DS_Store
-node_modules/
-.cache/
-dist/
-build/
-*.bak
-*.prettierrc
-.firebase/
